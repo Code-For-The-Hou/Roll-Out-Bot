@@ -119,7 +119,7 @@ def return_trash_schedule(user, text):
 	coords = geolocate(address_to_geocode)
 	schedule_message = get_trash_schedule(coords)
 
-	user.state = 2
+	user.state = 1
 	db.session.commit()
 
 	return "{} If you would like to search again, text a valid address (ie 123 Main St).".format(schedule_message)
