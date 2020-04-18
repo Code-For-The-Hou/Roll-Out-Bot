@@ -61,6 +61,7 @@ def get_trash_schedule(coords):
 	if 'schedule' not in data:
 		return "I'm sorry. I can't find your trash schedule."
 	days = {
+	'-1' : 'not sure',
 		'1' : 'Monday',
 		'2' : 'Tuesday',
 		'3' : 'Wednesday',
@@ -68,6 +69,7 @@ def get_trash_schedule(coords):
 		'5' : 'Friday'
 	}
 	weeks = {
+	'-1' : 'not sure',
 		'1' : 'first',
 		'2' : 'second',
 		'3' : 'third',
