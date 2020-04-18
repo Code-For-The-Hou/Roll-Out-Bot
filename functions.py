@@ -122,4 +122,4 @@ def return_trash_schedule(user, text):
 	user.state = 2
 	db.session.commit()
 
-	return "{} If you would like to search again, text a valid address (ie 123 Main St)."
+	return "{} If you would like to search again, text a valid address (ie 123 Main St).".format(schedule_message)
